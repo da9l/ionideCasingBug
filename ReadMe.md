@@ -16,3 +16,9 @@ Something similar to this should be shown
 	at Immediate.<anonymous> (c:\Users\danie\.vscode\extensions\ionide.ionide-fsharp-7.2.1\fsharp.js:2:178913)
 	at process.processImmediate (node:internal/timers:466:21)
 ```
+
+The problem is that there is a mismatch in filename casing of `MyFile.fs` in the filesystem and in the project file `ionideCasingBug.fsproj`. 
+
+## Workaround
+
+Fix the casing in the fsproj file
